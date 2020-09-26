@@ -1,0 +1,343 @@
+@font-face {
+	src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf),
+		url(YanoneKaffeesatz-VariableFont_wght.woff);
+	font-family: yano;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: yano;
+	line-height: 1.6;
+	color: #001233;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-nav a {
+    display: block;
+}
+
+a:link, a:visited {
+    color: #001233;
+}
+
+a:hover {
+    color: #979DAC; 
+}
+
+.student {
+	font-size: 1.7em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.nav {
+	font-size: 1em;
+	margin-top: 5px;
+	font-weight: bold;
+
+}
+
+.student a,
+.nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.nav a {
+	font-size: 1.5em;
+	color: #33415C;
+	text-transform: uppercase;
+}
+
+.nav a:hover {
+	color: #979DAC; 
+}
+
+.banner img{
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 2.5em;
+}
+
+.banner p {
+	font-size: 1.15em;
+	font-weight: lighter;
+	color: #5C677D;
+
+}
+.main-nav {
+	padding-top: .1em;
+    padding-bottom: .1em;
+    display: block;
+}
+
+.main-nav ul {
+    font-size: 13px;
+    font-weight: bold;
+    display: inline;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.main-nav li {
+	margin-bottom: 3px;
+	padding: 1px;
+	background-color: white;
+}
+
+/* --- Sections --- */
+
+.portfolio {
+	background-color: #33415C;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+}
+
+.portfolio h1 {
+	text-transform: uppercase;
+	font-size: 1.8em;
+	margin-top: .8em;
+	margin-bottom: 0;
+	padding: .5em 0 .5em;
+	color: #A3A9B6;
+
+}
+
+.portfolio h2 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin-top: .5em;
+	margin-bottom: 0;
+	padding: .5em 0 .5em;
+	color: #A3A9B6;
+
+}
+
+.portfolio .page p {
+	font-family: yano;
+	color: #F2F3F5;
+	font-size: 1em;
+	padding: 0 16px;
+}
+
+.portfolio .page img {
+	margin: 0 auto;
+	width: 100%;
+	padding: 5%;
+
+}
+
+.foot-nav {
+	border-top: 1px solid lightgray;
+	padding: 1.5em 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.cont-info {
+	margin: 1.5em 3em;
+}
+
+.cont-info .cont {
+	border-top: 1px solid lightgray;
+	padding-top: 2em;
+}
+
+.cont-info .cont, .skills .skills-info {
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: uppercase;
+
+}
+
+.skills p, .ptxt, .txt {
+	color: #022A52;
+}
+
+.skills p {
+	font-size: 1em;
+	font-family: yano;
+	margin: 0;
+}
+
+.skills .skills-info {
+	border-top: 1px solid lightgray;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+.skills ul {
+	font-size: 15px;
+	font-weight: bold;
+	display: inline;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.skills li {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #33415C;
+	color: whitesmoke;
+}
+
+.foot-nav h2 {
+	display: inline;
+	font-size: 1.1em;
+	padding-right: 6.5em;
+	color: #5C677D;
+}
+.foot-nav ul {
+	display: none;
+}
+
+.top {
+    font-size: smaller;
+    font-weight: bold;
+	margin-top: 1em;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+/* ---- Media Queries ---- */
+
+
+@media (min-width: 768px) {
+
+	.main-nav .student {
+		margin: 30px 0 10px;
+	}
+
+	.main-nav ul {
+		display: inline-flex;
+		padding-left: 0px;
+		margin-bottom: 0px;
+	}
+	.main-nav .nav{
+		background-color: inherit;
+		padding-left: 20px;
+	}
+
+	.banner {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 3em 1.5em;
+	}
+
+	.banner img {
+		width: 100%;
+		padding: 0;
+	}
+
+	.banner p {
+		font-size: 1em;
+		margin: 0;
+		padding-right: 1em;
+	}
+
+	.portfolio .container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.profile .page p {
+		padding: 0 1em;
+	}
+
+	.foot-nav {
+		padding: 1em 0 3em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.foot-nav ul {
+		display: block;
+		list-style-type: none;
+	}
+
+	.foot-nav ul li {
+		display: inline;
+		padding: 1.25em;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	.skills p {
+		margin: 1em 5em;
+	}
+
+	.ptxt {
+		margin: 2em 6em;
+	}
+
+    .top {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+	
+	body {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1em 1.25em 0 1.25em;
+	}
+
+	.main-nav .student, .main-nav .nav {
+		margin: 0;
+	}
+	
+	.banner {
+		margin: 3em 1.25em;
+	}
+
+	.banner p{
+		font-size: 1.4em;
+		text-align: left;
+	}
+
+	.container .page {
+		width: 33%;
+
+	}
+	.foot-nav {
+		padding: 1em;
+	}
+
+	.skills p {
+		margin: 1em 6em;
+	}
+
+}
+
+
+
+
