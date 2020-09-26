@@ -1,16 +1,13 @@
-@font-face {
-	src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf),
-		url(YanoneKaffeesatz-VariableFont_wght.woff);
-	font-family: yano;
-}
 
 
 * {
 	box-sizing: border-box;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+
 }
 
 body {
-	font-family: yano;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	line-height: 1.6;
 	color: #001233;
 }
@@ -124,13 +121,13 @@ a:hover {
 	font-size: 1.5em;
 	margin-top: .5em;
 	margin-bottom: 0;
-	padding: .5em 0 .5em;
+	padding: 0;
 	color: #A3A9B6;
 
 }
 
 .portfolio .page p {
-	font-family: yano;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #F2F3F5;
 	font-size: 1em;
 	padding: 0 16px;
@@ -173,7 +170,7 @@ a:hover {
 
 .skills p {
 	font-size: 1em;
-	font-family: yano;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	margin: 0;
 }
 
